@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
+- Added [`AGENTS.md`](./AGENTS.md): explicit AI stop-and-ask boundaries
+- `Junction-migration-template.ps1`: live runs require `-Confirm` (use `-DryRun` first)
+- README / SECURITY: enterprise-managed device + third-party EULA notes
 - Repository language standardized to **English** (paths, docs, skill, scripts, README)
 - Renamed folders: `01-methodology`, `02-decision-frameworks`, `03-operation-templates`, `04-retrospectives`, `05-reference-notes`
 - Open-source hardening: `PRIOR_ART.md`, `REFERENCES.md`, `NOTICE`, CI guard for scan reports

@@ -1,4 +1,4 @@
-# New PC Setup Playbook
+﻿# New PC Setup Playbook
 
 > An AI-assisted methodology + automation toolchain for configuring a new Windows PC — turning machine setup from manual labor into reproducible engineering practice.
 
@@ -78,7 +78,7 @@ new-pc-setup-playbook/
 ├── README.md
 ├── LICENSE / LICENSE-docs
 ├── CONTRIBUTING.md / CODE_OF_CONDUCT.md / SECURITY.md / CHANGELOG.md
-├── CITATION.cff / NOTICE / PRIOR_ART.md / REFERENCES.md
+├── CITATION.cff / NOTICE / PRIOR_ART.md / REFERENCES.md / AGENTS.md
 ├── .gitignore / .github/workflows/
 ├── 01-methodology/
 ├── 02-decision-frameworks/
@@ -101,6 +101,12 @@ See folders for full article lists. Key entry points:
 - Windows 11 (some scripts work on Windows 10)
 - PowerShell 5.1+ (7 recommended)
 - Optional: Trae / Cursor / other skill-compatible agents
+
+## Enterprise / managed devices & third-party licenses
+
+- On **corporate / MDM-managed** PCs, do **not** run elevated playbook scripts unless IT/security approved.
+- This repo does **not** ship third-party installers. If you install conda, CUDA, VS Code, OEM tools, etc., **you** must accept each product’s EULA and your org’s policies.
+- AI agents must follow [`AGENTS.md`](./AGENTS.md): high-risk steps require human confirmation; prefer `-DryRun` then `-Confirm`.
 
 ## Contributing
 

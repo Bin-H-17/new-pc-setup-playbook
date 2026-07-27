@@ -53,6 +53,12 @@ All scripts are plain PowerShell with no third-party dependencies and no obfusca
 
 Run with `Set-ExecutionPolicy -Scope Process Bypass` so the policy resets when you close the terminal.
 
+## Enterprise / managed devices
+
+Do not run elevated scripts from this playbook on managed devices without IT/security approval. Prefer generating plans only. See [`AGENTS.md`](./AGENTS.md) for AI permission boundaries.
+
+Third-party tools you install later (conda, CUDA, IDEs, OEM utilities) have their own licenses/EULAs — this repository cannot accept them for you.
+
 ## Publishing hygiene
 
 - Never commit `old-pc-scan-report.md`, migration zips, or `.env` (see `.gitignore`).
