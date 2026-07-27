@@ -29,6 +29,9 @@
 .PARAMETER DryRun
     Switch: simulate only, no changes — for dry runs
 
+.PARAMETER Confirm
+    Required for live (non-DryRun) runs. Without -Confirm, the script refuses to copy/delete/create junctions.
+
 .PARAMETER Restore
     Switch: restore mode — remove the Junction and move data back to the original C: location
 
@@ -37,14 +40,16 @@
     .\Junction-migration-template.ps1 `
         -Source "C:\Users\xxx\AppData\Roaming\Trae CN" `
         -Target "D:\Caches\Trae\Trae CN" `
-        -ProcessName "Trae"
+        -ProcessName "Trae" `
+        -Confirm
 
 .EXAMPLE
     # Migrate TRAE SOLO CN Cache subdirectory (recommended — junction Cache only is safer)
     .\Junction-migration-template.ps1 `
         -Source "C:\Users\xxx\AppData\Roaming\TRAE SOLO CN\Cache" `
         -Target "D:\Caches\Trae\TRAE SOLO CN\Cache" `
-        -ProcessName "Trae"
+        -ProcessName "Trae" `
+        -Confirm
 
 .EXAMPLE
     # DryRun preview, no actual changes
@@ -52,7 +57,7 @@
 
 .EXAMPLE
     # Restore: remove Junction and move data back to C:
-    .\Junction-migration-template.ps1 -Source "..." -Target "..." -Restore
+    .\Junction-migration-template.ps1 -Source "..." -Target "..." -Restore -Confirm
 
 .NOTES
     Author : Bin-H-17
@@ -77,6 +82,8 @@ param(
 
     [switch]$DryRun,
 
+    [switch]$Confirm,
+
     [switch]$Restore
 )
 
@@ -85,6 +92,11 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $script:BackupSuffix = ".bak.$(Get-Date -Format 'yyyyMMdd-HHmmss')"
+
+if (-not $DryRun -and -not $Confirm) {
+    Write-Host "Refusing live run without -Confirm. Preview first with -DryRun, then re-run with -Confirm." -ForegroundColor Red
+    throw "Missing -Confirm for non-DryRun execution."
+}
 
 # ==================== Helper Functions ====================
 
