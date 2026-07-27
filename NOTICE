@@ -1,0 +1,17 @@
+New PC Setup Playbook
+Copyright (c) 2026 Bin-H-17 and contributors
+
+This project is a **methodology and tooling pack** for Windows PC setup
+(AI skill + PowerShell templates + decision docs). It does NOT claim exclusive
+invention of NTFS junctions, package managers, or generic install checklists.
+
+Related practices and links are listed in REFERENCES.md and PRIOR_ART.md.
+Names and trademarks of third parties (Trae, Cursor, NVIDIA, PyTorch, etc.)
+remain with their owners. No endorsement is implied.
+
+Licensing in this repository is dual:
+- Code (*.ps1 and similar executable templates): MIT — see LICENSE
+- Documentation (methodology / frameworks / retrospectives / most .md): CC BY 4.0 — see LICENSE-docs
+
+When redistributing, keep LICENSE, LICENSE-docs, NOTICE, and REFERENCES.md.
+Do not vendor third-party binaries or installers into this tree.

@@ -1,0 +1,32 @@
+﻿cff-version: 1.2.0
+title: "New PC Setup Playbook — AI-Assisted Windows Workstation Configuration Methodology"
+message: "If you use this project in your own work, please cite it using the metadata below."
+type: software
+authors:
+  - alias: "Bin-H-17"
+repository-code: "https://github.com/Bin-H-17/new-pc-setup-playbook"
+url: "https://github.com/Bin-H-17/new-pc-setup-playbook"
+abstract: >-
+  An AI-assisted methodology and automation toolchain for configuring a new
+  Windows PC. Turns machine setup from manual labor into reproducible
+  engineering practice via three-layer classification, Plan B drive strategy,
+  progressive disclosure AI collaboration, and multi-round AI review.
+keywords:
+  - windows
+  - pc-setup
+  - ai-assisted
+  - automation
+  - powershell
+  - trae-skill
+  - junction-link
+  - workstation
+license: MIT
+version: "1.0.0"
+date-released: "2026-07-20"
+preferred-citation:
+  type: software
+  authors:
+    - alias: "Bin-H-17"
+  title: "New PC Setup Playbook"
+  year: 2026
+  url: "https://github.com/Bin-H-17/new-pc-setup-playbook"

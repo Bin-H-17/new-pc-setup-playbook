@@ -1,0 +1,33 @@
+# Guard: do not publish scan reports / migration zips
+
+name: guard-sensitive-artifacts
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  no-sensitive-artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fail if sensitive artifacts are tracked
+        run: |
+          set -e
+          bad=0
+          if git ls-files | grep -E '(^|/)(旧电脑扫描报告|old-pc-scan-report)\.md$' ; then
+            echo "::error::Tracked scan report found"
+            bad=1
+          fi
+          if git ls-files | grep -E '(^|/)(迁移包|计划包)\.zip$' ; then
+            echo "::error::Tracked migration zip found"
+            bad=1
+          fi
+          if git ls-files | grep -E '(^|/)\.env($|\.)' ; then
+            echo "::error::Tracked .env found"
+            bad=1
+          fi
+          if [ "$bad" -ne 0 ]; then
+            exit 1
+          fi
+          echo "OK: no sensitive artifacts tracked."

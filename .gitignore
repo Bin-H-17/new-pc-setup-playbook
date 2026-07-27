@@ -1,0 +1,45 @@
+# Sensitive files
+*.key
+*.pem
+*.pfx
+*.p12
+.env
+.env.*
+*credentials*
+*secret*
+*.txt.bak
+
+# Scan reports (may contain paths / software lists)
+old-pc-scan-report.md
+**/old-pc-scan-report.md
+*scan-report*
+旧电脑扫描报告.md
+*扫描报告*
+**/旧电脑扫描报告.md
+
+# Temp
+*.tmp
+*.bak
+*~
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# PowerShell
+*.ps1.bak
+
+# Migration packs (do not publish)
+迁移包.zip
+计划包.zip
+migration-pack.zip
+plan-pack.zip
+*.migration.zip
+
+# Local run artifacts
+.runs/
+__pycache__/
