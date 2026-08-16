@@ -8,6 +8,7 @@
 ![Skill: Trae](https://img.shields.io/badge/Skill-Trae-orange.svg)
 ![Stars](https://img.shields.io/github/stars/Bin-H-17/new-pc-setup-playbook)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/Bin-H-17/new-pc-setup-playbook/badge)](https://securityscorecards.dev/viewer/?uri=github.com/Bin-H-17/new-pc-setup-playbook)
 
 ---
 
