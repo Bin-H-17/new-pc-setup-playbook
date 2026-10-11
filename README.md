@@ -7,7 +7,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Docs: CC BY 4.0](https://img.shields.io/badge/Docs-CC_BY_4.0-blue.svg)
 ![Platform: Windows 11](https://img.shields.io/badge/Platform-Windows_11-0078D4.svg)
-![Skill: Trae](https://img.shields.io/badge/Skill-Trae-orange.svg)
+![Skill: AI Agents](https://img.shields.io/badge/Skill-AI_Agents-orange.svg)
 ![Stars](https://img.shields.io/github/stars/Bin-H-17/new-pc-setup-playbook)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/Bin-H-17/new-pc-setup-playbook/badge)](https://securityscorecards.dev/viewer/?uri=github.com/Bin-H-17/new-pc-setup-playbook)
@@ -17,6 +17,12 @@
 ## What This Is
 
 This is **not another software install list.** It is a structured, reviewable, evolving methodology that uses AI as both your **configuration brain** and **executor** — turning each PC setup into a reusable asset.
+
+## About 「电脑垦荒」
+
+**电脑垦荒**（literally "computer land reclamation"）is the Chinese name of this methodology: a new PC out of the factory is like an untilled field — blank system, no environments, no data, no conventions. 垦荒 means reclaiming and cultivating that land: deciding what to plant (software layers), where the irrigation goes (drives, caches, Junctions), and how to keep the field productive season after season (migration, review, records).
+
+If you search 电脑垦荒 / 新电脑配置 / 换电脑迁移, this playbook is the engineering answer: a repeatable process, not a one-off checklist.
 
 ## Why This Project Exists
 
@@ -52,6 +58,13 @@ This is **not another software install list.** It is a structured, reviewable, e
 Cross-model review for logic, safety (Junctions/permissions), then refinement.
 
 ## Quick Start
+
+### Step 0 — Get the Repo
+
+```powershell
+git clone https://github.com/Bin-H-17/new-pc-setup-playbook.git
+cd new-pc-setup-playbook
+```
 
 ### Step 1 — Install the Skill
 

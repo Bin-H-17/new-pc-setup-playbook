@@ -1,4 +1,4 @@
-﻿# Changelog
+# Changelog
 
 All notable changes to this project will be documented in this file.
 
@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
+- README: added 「电脑垦荒」 (PC land-reclamation) concept section with bilingual explanation
+- README: skill badge generalized to AI Agents (skill works across Trae / Cursor / compatible agents)
+- README: Quick Start now starts from cloning the repo (Step 0)
+- Added 电脑垦荒 keyword to SKILL descriptions and repo description
 - Added [`AGENTS.md`](./AGENTS.md): explicit AI stop-and-ask boundaries
 - `Junction-migration-template.ps1`: live runs require `-Confirm` (use `-DryRun` first)
 - README / SECURITY: enterprise-managed device + third-party EULA notes
