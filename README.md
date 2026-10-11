@@ -1,6 +1,8 @@
-﻿# New PC Setup Playbook
+# New PC Setup Playbook
 
 > An AI-assisted methodology + automation toolchain for configuring a new Windows PC — turning machine setup from manual labor into reproducible engineering practice.
+>
+> **电脑垦荒**：把一台新电脑从“出厂荒地”开垦成顺手的生产力阵地。AI 驱动的新电脑配置流程手册 —— 方法论、决策框架、PowerShell 模板与 Agent Skill。
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Docs: CC BY 4.0](https://img.shields.io/badge/Docs-CC_BY_4.0-blue.svg)

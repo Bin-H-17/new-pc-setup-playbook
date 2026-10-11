@@ -4,8 +4,8 @@ description: >-
   Plan and migrate a new Windows PC/workstation with AI: three-layer software
   priority, Plan B disk strategy with Junctions, old-PC scan, and staged setup
   guides. Use when the user mentions PC setup, new PC, workstation setup,
-  migrate PC, Windows environment migration, or 换电脑 / 新电脑 / 装机. Local-only
-  scripts; no telemetry.
+  migrate PC, Windows environment migration, or 换电脑 / 新电脑 / 装机 /
+  电脑垦荒. Local-only scripts; no telemetry.
 ---
 
 # New PC Setup Assistant
@@ -15,7 +15,7 @@ description: >-
 Activate this skill when the user expresses intent such as:
 - "PC setup" / "new PC" / "setup workstation" / "migrate PC"
 - "Windows environment migration" / "software migration" / "data migration"
-- Optional Chinese triggers: 换电脑 / 新电脑 / 装机辅助 / 电脑配置 / 工作站搭建 / 开发环境配置 / 迁移电脑
+- Optional Chinese triggers: 换电脑 / 新电脑 / 装机辅助 / 电脑配置 / 工作站搭建 / 开发环境配置 / 迁移电脑 / 电脑垦荒
 
 ## Skill positioning
 
